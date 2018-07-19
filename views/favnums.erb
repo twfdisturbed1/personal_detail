@@ -1,0 +1,18 @@
+<div class="center">
+<form method="post" action="favnums">
+<h2>Favorite numbers</h2>
+<p align="center">Whats your three favortie numbers?</p>
+    <div class="number_container">
+        <input type="hidden" name="first_name" value="<%=first_name%>" class="name_input">
+        <input type="hidden" name="last_name" value="<%=last_name%>" class="name_input">
+        <input type="hidden" name="street" value="<%=street%>" class="street_input">
+        <input type="hidden" name="city" value="<%=city%>" class="city_input">
+        <input type="hidden" name="state" value="<%=state%>" class="state_input">
+        <input type="hidden" name="zip" value="<%=zip%>" class="zip_input">
+        <input type="number" name="num1" class="num1_input" placeholder="Favorite Number 1">
+        <input type="number" name="num2" class="num2_input" placeholder="Favorite Number 2">
+        <input type="number" name="num3" class="num3_input" placeholder="Favorite Number 3">
+    </div>
+    <input type="submit">
+</form>
+</div>

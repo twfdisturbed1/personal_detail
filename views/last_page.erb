@@ -1,0 +1,32 @@
+<div class="center">
+<form method="post" action="last_page">
+    <p class="total"> Thank you 
+        <br><br>
+            <%=p "#{first_name}  #{last_name}"%>
+        <br><br>
+            Your Address is 
+        <br><br>
+            <%=p "#{street}"%>
+        <br>
+            <%="#{city},  #{state}"%> 
+        <br>   
+            <%=p "#{zip}"%>
+        <br>
+            Your Favorite numbers added up is
+        <br><br> 
+            <% total = num1.to_f+num2.to_f+num3.to_f%>   
+            <%=p "#{total.to_i}"%>
+    </p>
+    <div class="number_container">
+        <input type="hidden" name="first_name" value="<%=first_name%>" class="name_input">
+        <input type="hidden" name="last_name" value="<%=last_name%>" class="name_input">
+        <input type="hidden" name="street" value="<%=street%>" class="street_input">
+        <input type="hidden" name="city" value="<%=city%>" class="city_input">
+        <input type="hidden" name="state" value="<%=state%>" class="state_input">
+        <input type="hidden" name="zip" value="<%=zip%>" class="zip_input">
+        <input type="hidden" name="num1" value="<%=num1%>" class="num1_input" >
+        <input type="hidden" name="num2" value="<%=num2%>" class="num2_input" >
+        <input type="hidden" name="num3" value="<%=num3%>" class="num3_input" >
+    </div>
+</form>
+</div>
